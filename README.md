@@ -55,7 +55,7 @@ $projects = \App\Project::select(\Illuminate\Support\Facades\DB::raw($select))
  *  ]
  */
  
-$gantt = new Swatkins\LaravelGantt\Gantt($projects->toArray(), array(
+$gantt = new \Swatkins\LaravelGantt\Gantt($projects->toArray(), array(
     'title'      => 'Demo',
     'cellwidth'  => 25,
     'cellheight' => 35
